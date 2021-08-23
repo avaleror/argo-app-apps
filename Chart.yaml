@@ -1,0 +1,6 @@
+apiVersion: v2
+name: argo-deploy
+description: Helm Chart to deploy the apps from the templates folder
+type: application
+version: 0.1.0
+appVersion: "1.0"

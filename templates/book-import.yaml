@@ -12,7 +12,7 @@ spec:
   project: default
   source:
     path: book-import
-    repoURL: https://github.com/avaleror/application-examples.git
+    repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: master
   syncPolicy:
     automated:

@@ -11,8 +11,8 @@ spec:
     server: {{ .Values.spec.destination.server }}
   project: default
   source:
-    path: mortgage
-    repoURL: https://github.com/avaleror/application-examples.git
+    path: book-import
+    repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: master
   syncPolicy:
     automated:
