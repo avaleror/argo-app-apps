@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: mortgage
+  name: book-import
   namespace: openshift-gitops
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: mortgage
+    namespace: book-import
     server: {{ .Values.spec.destination.server }}
   project: default
   source:
-    path: mortgage
+    path: book-import
     repoURL: https://github.com/avaleror/application-examples.git
     targetRevision: master
   syncPolicy:
